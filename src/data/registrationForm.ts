@@ -27,7 +27,7 @@ export const registrationCategory: CategoryDef = {
   intField('siblings', 'siblings', 'Number of Siblings', ['Enter your number of siblings:'], 'e.g. 2', { min: 0, max: 30 }),
   doubleField('height', 'height', 'Height', ['Enter your height in cm:'], 'e.g. 165.5', { min: 0 }),
   doubleField('weight', 'weight', 'Weight', ['Enter your weight in kg:'], 'e.g. 55.5', { min: 0 }),
-  doubleField('gwa', 'gwa', 'GWA', ['Enter your GWA:'], 'e.g. 1.75', { min: 1, max: 100 })],
+  doubleField('averageGrade', 'averageGrade', 'Average Grade', ['Enter your average grade (percentage):'], 'e.g. 92.5', { min: 0, max: 100 })],
 
   patterns: [
   {
@@ -43,7 +43,7 @@ export const registrationCategory: CategoryDef = {
   {
     id: 'school', name: 'School Registration', className: 'RegistrationForm',
     summary: 'School details.',
-    slots: [['fullName'], ['nickname'], ['birthYear', 'age'], ['city'], ['school'], ['section'], ['siblings', 'yearLevel'], ['gwa'], ['favoriteSubject', 'course'], ['contactNumber', 'email']]
+    slots: [['fullName'], ['nickname'], ['birthYear', 'age'], ['city'], ['school'], ['section'], ['siblings', 'yearLevel'], ['averageGrade'], ['favoriteSubject', 'course'], ['contactNumber', 'email']]
   }]
 
 };
